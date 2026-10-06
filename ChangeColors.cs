@@ -9,13 +9,11 @@ public class ChangeColors: MonoBehaviour
 
     void Start() {
         rend = GetComponent<Renderer>();
-
         color = new Color(
             Random.Range(0.0f, 1.0f),
             Random.Range(0.0f, 1.0f), 
             Random.Range(0.0f, 1.0f)
         );
-
         rend.material.color = color;
     }
 
@@ -40,7 +38,6 @@ public class ChangeColors: MonoBehaviour
             }
 
             rend.material.color = color;
-
             contador_frames = 0;
         }
     }
